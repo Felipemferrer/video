@@ -1,0 +1,409 @@
+<html lang="pt-BR" class="scroll-smooth bg-gray-900"><head>
+    <meta data-n-head="1" charset="utf-8"><meta data-n-head="1" name="apple-mobile-web-app-capable" content="yes"><meta data-n-head="1" name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta data-n-head="1" data-hid="description" name="description"><meta data-n-head="1" data-hid="msapplication-TileColor" name="msapplication-TileColor" content="#da532c"><meta data-n-head="1" data-hid="theme-color" name="theme-color" content="#ffffff"><link data-n-head="1" rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="preload" href="/_nuxt/6c8cca5.js" as="script"><link rel="preload" href="/_nuxt/8a33234.js" as="script"><link rel="preload" href="/_nuxt/198c17c.js" as="script"><link rel="preload" href="/_nuxt/a385c29.js" as="script">
+  <style type="text/css">.__nuxt-error-page{padding:1rem;background:#f7f8fb;color:#47494e;text-align:center;display:flex;justify-content:center;align-items:center;flex-direction:column;font-family:sans-serif;font-weight:100!important;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;position:absolute;top:0;left:0;right:0;bottom:0}.__nuxt-error-page .error{max-width:450px}.__nuxt-error-page .title{font-size:1.5rem;margin-top:15px;color:#47494e;margin-bottom:8px}.__nuxt-error-page .description{color:#7f828b;line-height:21px;margin-bottom:10px}.__nuxt-error-page a{color:#7f828b!important;text-decoration:none}.__nuxt-error-page .logo{position:fixed;left:12px;bottom:12px}</style><style type="text/css">.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;opacity:1;transition:width .1s,opacity .4s;background-color:#000;z-index:999999}.nuxt-progress.nuxt-progress-notransition{transition:none}.nuxt-progress-failed{background-color:red}</style><style type="text/css">/*! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com*//*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+*/
+
+html {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-feature-settings: normal; /* 5 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+[hidden] {
+  display: none;
+}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;}::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;}.static{position:static;}.fixed{position:fixed;}.absolute{position:absolute;}.relative{position:relative;}.left-\[42\%\]{left:42%;}.top-\[32\%\]{top:32%;}.top-0{top:0px;}.left-0{left:0px;}.right-0{right:0px;}.bottom-0{bottom:0px;}.z-50{z-index:50;}.z-30{z-index:30;}.z-0{z-index:0;}.z-10{z-index:10;}.z-40{z-index:40;}.m-0{margin:0px;}.m-1{margin:0.25rem;}.mx-auto{margin-left:auto;margin-right:auto;}.my-4{margin-top:1rem;margin-bottom:1rem;}.my-8{margin-top:2rem;margin-bottom:2rem;}.my-3{margin-top:0.75rem;margin-bottom:0.75rem;}.mx-2{margin-left:0.5rem;margin-right:0.5rem;}.my-2{margin-top:0.5rem;margin-bottom:0.5rem;}.ml-\[33\%\]{margin-left:33%;}.mb-4{margin-bottom:1rem;}.mt-3{margin-top:0.75rem;}.mt-5{margin-top:1.25rem;}.mb-2{margin-bottom:0.5rem;}.-mt-2{margin-top:-0.5rem;}.mr-2{margin-right:0.5rem;}.-ml-1{margin-left:-0.25rem;}.mr-0\.5{margin-right:0.125rem;}.mr-0{margin-right:0px;}.mt-4{margin-top:1rem;}.mt-2{margin-top:0.5rem;}.-mt-12{margin-top:-3rem;}.ml-1{margin-left:0.25rem;}.-mt-6{margin-top:-1.5rem;}.mt-10{margin-top:2.5rem;}.block{display:block;}.inline-block{display:inline-block;}.flex{display:flex;}.inline-flex{display:inline-flex;}.grid{display:grid;}.contents{display:contents;}.hidden{display:none;}.h-screen{height:100vh;}.h-max{height:-moz-max-content;height:max-content;}.h-full{height:100%;}.h-20{height:5rem;}.h-3{height:0.75rem;}.h-2{height:0.5rem;}.h-28{height:7rem;}.h-10{height:2.5rem;}.h-5{height:1.25rem;}.h-12{height:3rem;}.w-full{width:100%;}.w-screen{width:100vw;}.w-20{width:5rem;}.w-6{width:1.5rem;}.w-8{width:2rem;}.w-28{width:7rem;}.w-10{width:2.5rem;}.w-12{width:3rem;}.w-fit{width:-moz-fit-content;width:fit-content;}.w-4{width:1rem;}.w-1\/3{width:33.333333%;}.w-36{width:9rem;}.w-3{width:0.75rem;}.min-w-0{min-width:0px;}.max-w-2xl{max-width:42rem;}.max-w-sm{max-width:24rem;}.max-w-3xl{max-width:48rem;}.max-w-5xl{max-width:64rem;}.max-w-md{max-width:28rem;}.max-w-lg{max-width:32rem;}.flex-1{flex:1 1 0%;}.flex-auto{flex:1 1 auto;}.flex-none{flex:none;}.grow{flex-grow:1;}.scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));}.scale-y-100{--tw-scale-y:1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));}.scale-y-105{--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));}.scale-y-150{--tw-scale-y:1.5;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));}@keyframes ping{75%, 100%{transform:scale(2);opacity:0;}}.animate-ping{animation:ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;}@keyframes pulse{50%{opacity:.5;}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;}.cursor-pointer{cursor:pointer;}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr));}.flex-col{flex-direction:column;}.flex-wrap{flex-wrap:wrap;}.items-center{align-items:center;}.justify-center{justify-content:center;}.justify-between{justify-content:space-between;}.gap-1{gap:0.25rem;}.gap-4{gap:1rem;}.gap-x-0\.5{-moz-column-gap:0.125rem;column-gap:0.125rem;}.gap-x-0{-moz-column-gap:0px;column-gap:0px;}.space-x-1 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.25rem * var(--tw-space-x-reverse));margin-left:calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));}.overflow-hidden{overflow:hidden;}.scroll-smooth{scroll-behavior:smooth;}.rounded-lg{border-radius:0.5rem;}.rounded-full{border-radius:9999px;}.rounded-\[18px\]{border-radius:18px;}.rounded-md{border-radius:0.375rem;}.rounded-xl{border-radius:0.75rem;}.rounded-2xl{border-radius:1rem;}.border-2{border-width:2px;}.border-4{border-width:4px;}.border-b-4{border-bottom-width:4px;}.border-t-4{border-top-width:4px;}.border-green-800{--tw-border-opacity:1;border-color:rgb(22 101 52 / var(--tw-border-opacity));}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235 / var(--tw-border-opacity));}.border-transparent{border-color:transparent;}.border-blue-900{--tw-border-opacity:1;border-color:rgb(30 58 138 / var(--tw-border-opacity));}.border-green-300{--tw-border-opacity:1;border-color:rgb(134 239 172 / var(--tw-border-opacity));}.border-b-green-800{--tw-border-opacity:1;border-bottom-color:rgb(22 101 52 / var(--tw-border-opacity));}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity));}.bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity));}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity));}.bg-green-600{--tw-bg-opacity:1;background-color:rgb(22 163 74 / var(--tw-bg-opacity));}.bg-yellow-600{--tw-bg-opacity:1;background-color:rgb(202 138 4 / var(--tw-bg-opacity));}.bg-stone-100{--tw-bg-opacity:1;background-color:rgb(245 245 244 / var(--tw-bg-opacity));}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity));}.bg-red-800{--tw-bg-opacity:1;background-color:rgb(153 27 27 / var(--tw-bg-opacity));}.bg-blue-700{--tw-bg-opacity:1;background-color:rgb(29 78 216 / var(--tw-bg-opacity));}.bg-green-100{--tw-bg-opacity:1;background-color:rgb(220 252 231 / var(--tw-bg-opacity));}.bg-green-400{--tw-bg-opacity:1;background-color:rgb(74 222 128 / var(--tw-bg-opacity));}.bg-green-500{--tw-bg-opacity:1;background-color:rgb(34 197 94 / var(--tw-bg-opacity));}.bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity));}.bg-yellow-300{--tw-bg-opacity:1;background-color:rgb(253 224 71 / var(--tw-bg-opacity));}.bg-opacity-80{--tw-bg-opacity:0.8;}.bg-opacity-90{--tw-bg-opacity:0.9;}.bg-\[conic-gradient\(at_right\2c _var\(--tw-gradient-stops\)\)\]{background-image:conic-gradient(at right, var(--tw-gradient-stops));}.bg-gradient-to-tl{background-image:linear-gradient(to top left, var(--tw-gradient-stops));}.from-red-900{--tw-gradient-from:#7f1d1d;--tw-gradient-to:rgb(127 29 29 / 0);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to);}.from-orange-500{--tw-gradient-from:#f97316;--tw-gradient-to:rgb(249 115 22 / 0);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to);}.via-violet-200{--tw-gradient-to:rgb(221 214 254 / 0);--tw-gradient-stops:var(--tw-gradient-from), #ddd6fe, var(--tw-gradient-to);}.via-orange-400{--tw-gradient-to:rgb(251 146 60 / 0);--tw-gradient-stops:var(--tw-gradient-from), #fb923c, var(--tw-gradient-to);}.to-orange-500{--tw-gradient-to:#f97316;}.fill-white{fill:#fff;}.p-3{padding:0.75rem;}.p-2{padding:0.5rem;}.p-4{padding:1rem;}.px-4{padding-left:1rem;padding-right:1rem;}.py-3{padding-top:0.75rem;padding-bottom:0.75rem;}.px-2{padding-left:0.5rem;padding-right:0.5rem;}.py-1{padding-top:0.25rem;padding-bottom:0.25rem;}.px-6{padding-left:1.5rem;padding-right:1.5rem;}.py-4{padding-top:1rem;padding-bottom:1rem;}.px-3{padding-left:0.75rem;padding-right:0.75rem;}.px-0\.5{padding-left:0.125rem;padding-right:0.125rem;}.px-0{padding-left:0px;padding-right:0px;}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem;}.px-1{padding-left:0.25rem;padding-right:0.25rem;}.py-0{padding-top:0px;padding-bottom:0px;}.py-2{padding-top:0.5rem;padding-bottom:0.5rem;}.py-6{padding-top:1.5rem;padding-bottom:1.5rem;}.py-5{padding-top:1.25rem;padding-bottom:1.25rem;}.pt-0\.5{padding-top:0.125rem;}.pt-0{padding-top:0px;}.pb-5{padding-bottom:1.25rem;}.pb-10{padding-bottom:2.5rem;}.text-center{text-align:center;}.align-middle{vertical-align:middle;}.font-\[Helvetica\]{font-family:Helvetica;}.text-lg{font-size:1.125rem;line-height:1.75rem;}.text-sm{font-size:0.875rem;line-height:1.25rem;}.text-2xl{font-size:1.5rem;line-height:2rem;}.text-xl{font-size:1.25rem;line-height:1.75rem;}.text-xs{font-size:0.75rem;line-height:1rem;}.text-\[13px\]{font-size:13px;}.text-3xl{font-size:1.875rem;line-height:2.25rem;}.text-6xl{font-size:3.75rem;line-height:1;}.font-bold{font-weight:700;}.font-semibold{font-weight:600;}.font-medium{font-weight:500;}.font-normal{font-weight:400;}.uppercase{text-transform:uppercase;}.leading-none{line-height:1;}.leading-4{line-height:1rem;}.leading-tight{line-height:1.25;}.leading-normal{line-height:1.5;}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity));}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity));}.text-yellow-500{--tw-text-opacity:1;color:rgb(234 179 8 / var(--tw-text-opacity));}.text-black{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity));}.text-red-700{--tw-text-opacity:1;color:rgb(185 28 28 / var(--tw-text-opacity));}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity));}.text-blue-700{--tw-text-opacity:1;color:rgb(29 78 216 / var(--tw-text-opacity));}.text-\[\#365899\]{--tw-text-opacity:1;color:rgb(54 88 153 / var(--tw-text-opacity));}.text-\[\#90949c\]{--tw-text-opacity:1;color:rgb(144 148 156 / var(--tw-text-opacity));}.text-yellow-300{--tw-text-opacity:1;color:rgb(253 224 71 / var(--tw-text-opacity));}.text-yellow-400{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity));}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity));}.text-red-800{--tw-text-opacity:1;color:rgb(153 27 27 / var(--tw-text-opacity));}.text-green-900{--tw-text-opacity:1;color:rgb(20 83 45 / var(--tw-text-opacity));}.text-yellow-100{--tw-text-opacity:1;color:rgb(254 249 195 / var(--tw-text-opacity));}.text-pink-500{--tw-text-opacity:1;color:rgb(236 72 153 / var(--tw-text-opacity));}.text-red-600{--tw-text-opacity:1;color:rgb(220 38 38 / var(--tw-text-opacity));}.underline{text-decoration-line:underline;}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}.opacity-75{opacity:0.75;}.opacity-100{opacity:1;}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);}.outline-none{outline:2px solid transparent;outline-offset:2px;}.ring-2{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);}.ring-4{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);}.ring-slate-400{--tw-ring-opacity:1;--tw-ring-color:rgb(148 163 184 / var(--tw-ring-opacity));}.ring-orange-600{--tw-ring-opacity:1;--tw-ring-color:rgb(234 88 12 / var(--tw-ring-opacity));}.drop-shadow{--tw-drop-shadow:drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);}.grayscale{--tw-grayscale:grayscale(100%);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);}.backdrop-blur-\[100px\]{--tw-backdrop-blur:blur(100px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms;}.duration-300{transition-duration:300ms;}.ease-linear{transition-timing-function:linear;}.before\:absolute::before{content:var(--tw-content);position:absolute;}.before\:left-0::before{content:var(--tw-content);left:0px;}.before\:top-0::before{content:var(--tw-content);top:0px;}.before\:bottom-0::before{content:var(--tw-content);bottom:0px;}.before\:right-\[calc\(100\%-var\(--preview\)\)\]::before{content:var(--tw-content);right:calc(100% - var(--preview));}.before\:hidden::before{content:var(--tw-content);display:none;}.before\:content-\[\'\'\]::before{--tw-content:'';content:var(--tw-content);}.before\:content-\[\\\'\\\'\]::before{--tw-content:\'\';content:var(--tw-content);}.after\:absolute::after{content:var(--tw-content);position:absolute;}.after\:left-0::after{content:var(--tw-content);left:0px;}.after\:top-0::after{content:var(--tw-content);top:0px;}.after\:bottom-0::after{content:var(--tw-content);bottom:0px;}.after\:right-\[calc\(100\%-var\(--progress\)\)\]::after{content:var(--tw-content);right:calc(100% - var(--progress));}.after\:bg-yellow-500::after{content:var(--tw-content);--tw-bg-opacity:1;background-color:rgb(234 179 8 / var(--tw-bg-opacity));}.after\:content-\[\'\'\]::after{--tw-content:'';content:var(--tw-content);}.after\:content-\[\\\'\\\'\]::after{--tw-content:\'\';content:var(--tw-content);}.last\:mb-0:last-child{margin-bottom:0px;}.focus-within\:ring-2:focus-within{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);}.focus-within\:ring-indigo-500:focus-within{--tw-ring-opacity:1;--tw-ring-color:rgb(99 102 241 / var(--tw-ring-opacity));}.focus-within\:ring-offset-2:focus-within{--tw-ring-offset-width:2px;}.hover\:border-gray-400:hover{--tw-border-opacity:1;border-color:rgb(156 163 175 / var(--tw-border-opacity));}.hover\:bg-opacity-90:hover{--tw-bg-opacity:0.9;}.hover\:underline:hover{text-decoration-line:underline;}.group:hover .before\:group-hover\:block::before{content:var(--tw-content);display:block;}.group:hover .after\:group-hover\:block::after{content:var(--tw-content);display:block;}@media (prefers-color-scheme: dark){.dark\:bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops));}.dark\:from-gray-900{--tw-gradient-from:#111827;--tw-gradient-to:rgb(17 24 39 / 0);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to);}.dark\:via-purple-900{--tw-gradient-to:rgb(88 28 135 / 0);--tw-gradient-stops:var(--tw-gradient-from), #581c87, var(--tw-gradient-to);}.dark\:to-violet-600{--tw-gradient-to:#7c3aed;}}@media (min-width: 640px){.sm\:flex{display:flex;}.sm\:h-6{height:1.5rem;}.sm\:h-3{height:0.75rem;}.sm\:h-44{height:11rem;}.sm\:w-44{width:11rem;}.sm\:w-16{width:4rem;}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr));}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem;}.sm\:px-16{padding-left:4rem;padding-right:4rem;}.sm\:text-center{text-align:center;}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem;}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem;}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem;}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem;}}@media (min-width: 768px){.md\:left-\[43\%\]{left:43%;}.md\:h-44{height:11rem;}.md\:w-44{width:11rem;}.md\:w-2\/3{width:66.666667%;}.md\:py-3{padding-top:0.75rem;padding-bottom:0.75rem;}.md\:text-2xl{font-size:1.5rem;line-height:2rem;}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem;}}@media (min-width: 1024px){.lg\:-mt-12{margin-top:-3rem;}.lg\:px-8{padding-left:2rem;padding-right:2rem;}}</style><style type="text/css">html{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;font-size:16px;word-spacing:1px;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;box-sizing:border-box}</style><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-P8CXNR4"></script><script charset="utf-8" src="/_nuxt/a73319c.js"></script><style type="text/css">@import url(https://fornplayer.vercel.app/dist/output.css);</style><style type="text/css"></style><style type="text/css">@import url(https://fornplayer.vercel.app/dist/output.css);</style><style type="text/css">@import url(https://cdn.plyr.io/3.7.8/plyr.css);</style><style type="text/css"></style><style type="text/css">#container-cidade{padding:1rem;width:100%;background-color:#040464;color:#fff;display:inline-table;font-size:12px;font-weight:700;font-family:"Lucida Sans","Lucida Sans Regular","Lucida Grande","Lucida Sans Unicode",Geneva,Verdana,sans-serif;text-align:center}.zooming{animation:zooming 1.25s ease infinite}@keyframes zooming{0%{transform:scale(1)}50%{transform:scale(1.1)}to{transform:scale(1)}}</style><link href="https://www.google-analytics.com" rel="preconnect"><script async="" src="https://www.google-analytics.com/analytics.js" charset="utf-8"></script><script src="/_vercel/insights/script.js" defer="" data-sdkn="@vercel/analytics" data-sdkv="0.1.11"></script><script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js" async=""></script><title>Método Grossura Viking</title><meta data-n-head="1" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></head>
+  <body><div hidden="" id="sprite-plyr"><!--?xml version="1.0" encoding="UTF-8"?--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="plyr-airplay" viewBox="0 0 18 18"><path d="M16 1H2a1 1 0 00-1 1v10a1 1 0 001 1h3v-2H3V3h12v8h-2v2h3a1 1 0 001-1V2a1 1 0 00-1-1z"></path><path d="M4 17h10l-5-6z"></path></symbol><symbol id="plyr-captions-off" viewBox="0 0 18 18"><path d="M1 1c-.6 0-1 .4-1 1v11c0 .6.4 1 1 1h4.6l2.7 2.7c.2.2.4.3.7.3.3 0 .5-.1.7-.3l2.7-2.7H17c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1H1zm4.52 10.15c1.99 0 3.01-1.32 3.28-2.41l-1.29-.39c-.19.66-.78 1.45-1.99 1.45-1.14 0-2.2-.83-2.2-2.34 0-1.61 1.12-2.37 2.18-2.37 1.23 0 1.78.75 1.95 1.43l1.3-.41C8.47 4.96 7.46 3.76 5.5 3.76c-1.9 0-3.61 1.44-3.61 3.7 0 2.26 1.65 3.69 3.63 3.69zm7.57 0c1.99 0 3.01-1.32 3.28-2.41l-1.29-.39c-.19.66-.78 1.45-1.99 1.45-1.14 0-2.2-.83-2.2-2.34 0-1.61 1.12-2.37 2.18-2.37 1.23 0 1.78.75 1.95 1.43l1.3-.41c-.28-1.15-1.29-2.35-3.25-2.35-1.9 0-3.61 1.44-3.61 3.7 0 2.26 1.65 3.69 3.63 3.69z" fill-rule="evenodd" fill-opacity=".5"></path></symbol><symbol id="plyr-captions-on" viewBox="0 0 18 18"><path d="M1 1c-.6 0-1 .4-1 1v11c0 .6.4 1 1 1h4.6l2.7 2.7c.2.2.4.3.7.3.3 0 .5-.1.7-.3l2.7-2.7H17c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1H1zm4.52 10.15c1.99 0 3.01-1.32 3.28-2.41l-1.29-.39c-.19.66-.78 1.45-1.99 1.45-1.14 0-2.2-.83-2.2-2.34 0-1.61 1.12-2.37 2.18-2.37 1.23 0 1.78.75 1.95 1.43l1.3-.41C8.47 4.96 7.46 3.76 5.5 3.76c-1.9 0-3.61 1.44-3.61 3.7 0 2.26 1.65 3.69 3.63 3.69zm7.57 0c1.99 0 3.01-1.32 3.28-2.41l-1.29-.39c-.19.66-.78 1.45-1.99 1.45-1.14 0-2.2-.83-2.2-2.34 0-1.61 1.12-2.37 2.18-2.37 1.23 0 1.78.75 1.95 1.43l1.3-.41c-.28-1.15-1.29-2.35-3.25-2.35-1.9 0-3.61 1.44-3.61 3.7 0 2.26 1.65 3.69 3.63 3.69z" fill-rule="evenodd"></path></symbol><symbol id="plyr-download" viewBox="0 0 18 18"><path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z"></path></symbol><symbol id="plyr-enter-fullscreen" viewBox="0 0 18 18"><path d="M10 3h3.6l-4 4L11 8.4l4-4V8h2V1h-7zM7 9.6l-4 4V10H1v7h7v-2H4.4l4-4z"></path></symbol><symbol id="plyr-exit-fullscreen" viewBox="0 0 18 18"><path d="M1 12h3.6l-4 4L2 17.4l4-4V17h2v-7H1zM16 .6l-4 4V1h-2v7h7V6h-3.6l4-4z"></path></symbol><symbol id="plyr-fast-forward" viewBox="0 0 18 18"><path d="M7.875 7.171L0 1v16l7.875-6.171V17L18 9 7.875 1z"></path></symbol><symbol id="plyr-logo-vimeo" viewBox="0 0 18 18"><path d="M17 5.3c-.1 1.6-1.2 3.7-3.3 6.4-2.2 2.8-4 4.2-5.5 4.2-.9 0-1.7-.9-2.4-2.6C5 10.9 4.4 6 3 6c-.1 0-.5.3-1.2.8l-.8-1c.8-.7 3.5-3.4 4.7-3.5 1.2-.1 2 .7 2.3 2.5.3 2 .8 6.1 1.8 6.1.9 0 2.5-3.4 2.6-4 .1-.9-.3-1.9-2.3-1.1.8-2.6 2.3-3.8 4.5-3.8 1.7.1 2.5 1.2 2.4 3.3z"></path></symbol><symbol id="plyr-logo-youtube" viewBox="0 0 18 18"><path d="M16.8 5.8c-.2-1.3-.8-2.2-2.2-2.4C12.4 3 9 3 9 3s-3.4 0-5.6.4C2 3.6 1.3 4.5 1.2 5.8 1 7.1 1 9 1 9s0 1.9.2 3.2c.2 1.3.8 2.2 2.2 2.4C5.6 15 9 15 9 15s3.4 0 5.6-.4c1.4-.3 2-1.1 2.2-2.4.2-1.3.2-3.2.2-3.2s0-1.9-.2-3.2zM7 12V6l5 3-5 3z"></path></symbol><symbol id="plyr-muted" viewBox="0 0 18 18"><path d="M12.4 12.5l2.1-2.1 2.1 2.1 1.4-1.4L15.9 9 18 6.9l-1.4-1.4-2.1 2.1-2.1-2.1L11 6.9 13.1 9 11 11.1zM3.786 6.008H.714C.286 6.008 0 6.31 0 6.76v4.512c0 .452.286.752.714.752h3.072l4.071 3.858c.5.3 1.143 0 1.143-.602V2.752c0-.601-.643-.977-1.143-.601L3.786 6.008z"></path></symbol><symbol id="plyr-pause" viewBox="0 0 18 18"><path d="M6 1H3c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h3c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1zm6 0c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h3c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1h-3z"></path></symbol><symbol id="plyr-pip" viewBox="0 0 18 18"><path d="M13.293 3.293L7.022 9.564l1.414 1.414 6.271-6.271L17 7V1h-6z"></path><path d="M13 15H3V5h5V3H2a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1v-6h-2v5z"></path></symbol><symbol id="plyr-play" viewBox="0 0 18 18"><path d="M15.562 8.1L3.87.225c-.818-.562-1.87 0-1.87.9v15.75c0 .9 1.052 1.462 1.87.9L15.563 9.9c.584-.45.584-1.35 0-1.8z"></path></symbol><symbol id="plyr-restart" viewBox="0 0 18 18"><path d="M9.7 1.2l.7 6.4 2.1-2.1c1.9 1.9 1.9 5.1 0 7-.9 1-2.2 1.5-3.5 1.5-1.3 0-2.6-.5-3.5-1.5-1.9-1.9-1.9-5.1 0-7 .6-.6 1.4-1.1 2.3-1.3l-.6-1.9C6 2.6 4.9 3.2 4 4.1 1.3 6.8 1.3 11.2 4 14c1.3 1.3 3.1 2 4.9 2 1.9 0 3.6-.7 4.9-2 2.7-2.7 2.7-7.1 0-9.9L16 1.9l-6.3-.7z"></path></symbol><symbol id="plyr-rewind" viewBox="0 0 18 18"><path d="M10.125 1L0 9l10.125 8v-6.171L18 17V1l-7.875 6.171z"></path></symbol><symbol id="plyr-settings" viewBox="0 0 18 18"><path d="M16.135 7.784a2 2 0 01-1.23-2.969c.322-.536.225-.998-.094-1.316l-.31-.31c-.318-.318-.78-.415-1.316-.094a2 2 0 01-2.969-1.23C10.065 1.258 9.669 1 9.219 1h-.438c-.45 0-.845.258-.997.865a2 2 0 01-2.969 1.23c-.536-.322-.999-.225-1.317.093l-.31.31c-.318.318-.415.781-.093 1.317a2 2 0 01-1.23 2.969C1.26 7.935 1 8.33 1 8.781v.438c0 .45.258.845.865.997a2 2 0 011.23 2.969c-.322.536-.225.998.094 1.316l.31.31c.319.319.782.415 1.316.094a2 2 0 012.969 1.23c.151.607.547.865.997.865h.438c.45 0 .845-.258.997-.865a2 2 0 012.969-1.23c.535.321.997.225 1.316-.094l.31-.31c.318-.318.415-.781.094-1.316a2 2 0 011.23-2.969c.607-.151.865-.547.865-.997v-.438c0-.451-.26-.846-.865-.997zM9 12a3 3 0 110-6 3 3 0 010 6z"></path></symbol><symbol id="plyr-volume" viewBox="0 0 18 18"><path d="M15.6 3.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4C15.4 5.9 16 7.4 16 9c0 1.6-.6 3.1-1.8 4.3-.4.4-.4 1 0 1.4.2.2.5.3.7.3.3 0 .5-.1.7-.3C17.1 13.2 18 11.2 18 9s-.9-4.2-2.4-5.7z"></path><path d="M11.282 5.282a.909.909 0 000 1.316c.735.735.995 1.458.995 2.402 0 .936-.425 1.917-.995 2.487a.909.909 0 000 1.316c.145.145.636.262 1.018.156a.725.725 0 00.298-.156C13.773 11.733 14.13 10.16 14.13 9c0-.17-.002-.34-.011-.51-.053-.992-.319-2.005-1.522-3.208a.909.909 0 00-1.316 0zm-7.496.726H.714C.286 6.008 0 6.31 0 6.76v4.512c0 .452.286.752.714.752h3.072l4.071 3.858c.5.3 1.143 0 1.143-.602V2.752c0-.601-.643-.977-1.143-.601L3.786 6.008z"></path></symbol></svg></div>
+    <div id="__nuxt"><!----><div id="__layout"><div><div><section class="bg-gray-900 text-white"><h3 class="text-black py-2 text-lg text-center">🎧 <span class="text-white font-bold">Toque no vídeo para
+				Assistir</span> 👇</h3> <div class="max-w-3xl px-3 mx-auto"><div id="wrap-player" class="relative w-full h-full"><div class="plyr plyr--full-ui plyr--video plyr--html5 plyr--fullscreen-enabled plyr--paused plyr--stopped plyr--pip-supported"><div class="plyr__controls"><button class="plyr__controls__item plyr__control" type="button" data-plyr="play" aria-pressed="false" aria-label="Play"><svg class="icon--pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-pause"></use></svg><svg class="icon--not-pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-play"></use></svg><span class="label--pressed plyr__sr-only">Pause</span><span class="label--not-pressed plyr__sr-only">Play</span></button></div><div class="plyr__video-wrapper"><video id="player" playsinline="" data-poster="" class="z-40" src="https://z-p3-video.fsdu7-1.fna.fbcdn.net/v/t42.1790-2/10000000_2614879805319827_1597249497116971485_n.mp4?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=55d0d3&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InN2ZV9zZCJ9&amp;_nc_eui2=AeFo7j2p1K3DVGFC5KLEpohEgtwgpXvQ-GeC3CCle9D4Z2m0C_MUZACaJdvMGkX1mUkfxADk9sEP__0yV9n1xOG2&amp;_nc_ohc=lkFzO_TfaxQAX-d8OnI&amp;_nc_ht=z-p3-video.fsdu7-1.fna&amp;oh=00_AfCfCa8E_cgua4Oz0bnslTsEe4UxE6XC44G8nquYlsJ7HQ&amp;oe=6556C4C0"></video><div class="plyr__poster"></div></div><div class="plyr__captions" dir="auto"></div></div> <div></div><div class="resumeVideo smartplayer-resume absolute z-50 top-0 bottom-0 left-0 right-0 bg-yellow-600 bg-opacity-90 text-white"><div class="smartplayer-resume__content flex items-center w-full h-full"><div class="smartplayer-resume__actions flex flex-wrap items-center w-md mx-auto"> <div class="smartplayer-resume__title w-full text-center text-lg sm:text-4xl mb-4"> Você já começou a assistir esse vídeo </div> <div class="block text-center mx-auto font-bold text-sm sm:flex sm:text-lg md:text-2xl"> <div class="resumeBtn smartplayer-resume__play items-center flex"> <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 32" class="w-6 fill-white"> <path d="M15.552 15.168q0.448 0.32 0.448 0.832 0 0.448-0.448 0.768l-13.696 8.512q-0.768 0.512-1.312 0.192t-0.544-1.28v-16.448q0-0.96 0.544-1.28t1.312 0.192z"> </path> </svg> <span class="smartplayer-resume__text px-4">Continuar assistindo?</span> </div> <div class="restartVideo smartplayer-resume__rewind flex items-center"> <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 "> <path class="fill-white" d="M12.567 1.258C10.4159 1.34378 8.33932 2.06916 6.60269 3.34139C4.86607 4.61363 3.54834 6.37489 2.818 8.4C2.79854 8.45424 2.76093 8.50009 2.71155 8.5298C2.66217 8.5595 2.60404 8.57123 2.547 8.563L0.858001 8.309C0.765439 8.29713 0.671392 8.31069 0.58595 8.34821C0.500507 8.38574 0.426892 8.44582 0.373001 8.522C0.320143 8.59948 0.290143 8.69027 0.28643 8.78399C0.282716 8.87771 0.305439 8.97058 0.352001 9.052L3.031 13.752C3.06906 13.8186 3.12192 13.8755 3.18549 13.9184C3.24906 13.9612 3.32164 13.9889 3.39762 13.9993C3.4736 14.0096 3.55094 14.0023 3.62366 13.978C3.69638 13.9537 3.76253 13.913 3.817 13.859L7.587 10.113C7.65301 10.0476 7.69952 9.9652 7.72129 9.87489C7.74307 9.78459 7.73926 9.69 7.71029 9.60175C7.68132 9.51349 7.62834 9.43504 7.55728 9.37521C7.48622 9.31538 7.3999 9.27652 7.308 9.263L5.593 9.007C5.5547 9.00143 5.51822 8.98705 5.48643 8.96498C5.45464 8.94292 5.4284 8.91377 5.40979 8.87984C5.39118 8.84591 5.3807 8.80813 5.37917 8.76946C5.37765 8.73079 5.38512 8.69229 5.401 8.657C5.99665 7.30842 6.94242 6.14385 8.14013 5.28421C9.33783 4.42457 10.7438 3.9012 12.2121 3.76843C13.6804 3.63565 15.1574 3.89832 16.4899 4.52916C17.8224 5.16 18.9617 6.13602 19.7896 7.35588C20.6176 8.57574 21.1038 9.99497 21.198 11.4662C21.2922 12.9375 20.9909 14.4071 20.3253 15.7226C19.6597 17.0381 18.6541 18.1514 17.4129 18.947C16.1717 19.7426 14.7402 20.1915 13.267 20.247C12.9355 20.253 12.6199 20.3904 12.3897 20.629C12.1595 20.8677 12.0335 21.188 12.0395 21.5195C12.0455 21.851 12.1829 22.1666 12.4215 22.3968C12.6602 22.627 12.9805 22.753 13.312 22.747H13.359C14.7758 22.7035 16.1699 22.3803 17.4613 21.796C18.7527 21.2117 19.9157 20.3778 20.8836 19.3422C21.8515 18.3067 22.605 17.09 23.1009 15.7622C23.5967 14.4343 23.8251 13.0215 23.7729 11.6051C23.7207 10.1886 23.3889 8.79645 22.7967 7.5087C22.2044 6.22096 21.3633 5.06304 20.3218 4.10158C19.2804 3.14012 18.0591 2.39409 16.7282 1.90642C15.3973 1.41875 13.9831 1.19906 12.567 1.26V1.258Z" fill="black"></path> </svg> <span class="smartplayer-resume__text px-4">Assistir do início?</span> </div> </div> </div> </div> </div><div class="hidden smartplayerBtn flex  z-50 smartplay-wrapper flex-wrap items-center bg-opacity-80 background-color: rgba(255, 0, 0, 0.554);"> <span class="smartplay-span">Seu vídeo já começou</span> <div class="w-full justify-center relative"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="ml-[33%]" viewBox="7.999 9.062 46.75 32.563" xml:space="preserve"> <g class="adjustable fg bg-red-500"> <path class="smartplay-svg-color" d="M53.249,39.616c-0.186,0-0.371-0.051-0.537-0.157l-43.5-27.75c-0.466-0.297-0.603-0.916-0.306-1.381c0.298-0.466,0.917-0.601,1.381-0.306l43.5,27.75c0.467,0.297,0.604,0.916,0.307,1.381C53.901,39.453,53.579,39.616,53.249,39.616z"> </path> <path class="blink_3 smartplay-svg-color" d="M48.896,33.467l1.699,1.085c3.497-7.791,2.073-17.271-4.313-23.659c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414C50.581,18.019,51.913,26.463,48.896,33.467z"> </path> <path class="blink_3 smartplay-svg-color" d="M46.926,36.956c-0.612,0.863-1.286,1.695-2.059,2.469c-0.392,0.391-0.392,1.023,0,1.414c0.194,0.195,0.45,0.293,0.707,0.293c0.256,0,0.512-0.098,0.706-0.293c0.878-0.878,1.642-1.824,2.333-2.807L46.926,36.956z"> </path> <path class="blink_2 smartplay-svg-color" d="M42.543,29.415l1.777,1.135c1.545-5.315,0.229-11.293-3.953-15.476c-0.392-0.391-1.023-0.391-1.414,0c-0.392,0.391-0.392,1.023,0,1.414C42.454,19.987,43.639,24.925,42.543,29.415z"> </path> <path class="blink_2 smartplay-svg-color" d="M41,33.174c-0.563,0.94-1.235,1.837-2.047,2.646c-0.391,0.392-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293c0.916-0.914,1.676-1.924,2.317-2.984L41,33.174z"> </path> <path class="blink_1 smartplay-svg-color" d="M35.771,25.094l2.003,1.277c0.012-0.203,0.029-0.404,0.029-0.609c0-3.079-1.2-5.974-3.381-8.153c-0.391-0.391-1.022-0.391-1.414,0c-0.391,0.391-0.391,1.023,0,1.414C34.652,20.666,35.613,22.802,35.771,25.094z"> </path> <path class="blink_1 smartplay-svg-color" d="M35.084,29.401c-0.474,1.145-1.172,2.197-2.076,3.1c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293c0.257,0,0.513-0.098,0.707-0.293c1.008-1.006,1.795-2.17,2.361-3.43L35.084,29.401z"> </path> <polygon class="smartplay-svg-color" points="28.124,20.215 28.124,14.991 24.635,17.99  "> </polygon> <path class="smartplay-svg-color" d="M20.921,20.366h-6.423c-0.553,0-1,0.508-1,1.135v8.229c0,0.627,0.447,1.135,1,1.135h7.375l6.25,5.875V24.96L20.921,20.366z"> </path> </g> </svg> </div> <span class="smartplay-span">Clique para ouvir</span> </div><div class="playBtn hidden absolute w-full h-full z-50 top-0 bottom-0 left-0 right-0 text-center justify-center flex items-center align-middle"><button class="playBtn z-50 center-icon absolute"> <svg xmlns="http://www.w3.org/2000/svg" class="absolute w-full animate-ping opacity-75 cursor-pointer text-red-500" viewBox="0 0 24 24"> <path fill="currentColor" d="m9.5 16.5l7-4.5l-7-4.5ZM12 22q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Zm0-2q3.35 0 5.675-2.325Q20 15.35 20 12q0-3.35-2.325-5.675Q15.35 4 12 4Q8.65 4 6.325 6.325Q4 8.65 4 12q0 3.35 2.325 5.675Q8.65 20 12 20Zm0-8Z"></path> </svg> <svg xmlns="http://www.w3.org/2000/svg" class="relative inline-flex w-28 h-28 sm:h-44 sm:w-44 opacity-75 cursor-pointer text-red-500" viewBox="0 0 24 24"> <path fill="currentColor" d="m9.5 16.5l7-4.5l-7-4.5ZM12 22q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Zm0-2q3.35 0 5.675-2.325Q20 15.35 20 12q0-3.35-2.325-5.675Q15.35 4 12 4Q8.65 4 6.325 6.325Q4 8.65 4 12q0 3.35 2.325 5.675Q8.65 20 12 20Zm0-8Z"></path> </svg> </button></div><div class="slider hidSpeed backBetter absolute left-0 bottom-0 z-40  w-full flex-col backdrop-blur-[100px] transition-opacity duration-300"> <div class="progressBar-container group flex h-2 sm:h-3 cursor-pointer items-center"> <div class="before:bg-yellow-0 relative h-2 sm:h-3 w-full before:absolute before:left-0 before:top-0 before:bottom-0 before:right-[calc(100%-var(--preview))] before:hidden before:content-[''] after:bg-yellow-500 after:absolute after:left-0 after:top-0 after:bottom-0 after:right-[calc(100%-var(--progress))] after:content-[''] before:group-hover:block after:group-hover:block "> </div> </div> </div></div></div> <div id="cta" data-cta="cta" class="flex-wrap relative cta mx-auto max-w-md px-6 hidden items-center text-center"><a href="https://go.fornpay.com/eaq60?affh=wj2l72g8ch&amp;src=undefined" class="zooming offer_btn inline-block cursor-pointer text-xl shadow-lg border-2 px-4 py-2 mt-3 rounded-lg border-b-4 border-b-green-800 font-semibold text-center text-white bg-green-600 border-green-800 uppercase"><span class="leading-none m-0">Quero deixar meu PAU mais grosso</span></a> <a href="https://go.fornpay.com/eaq60?affh=wj2l72g8ch&amp;src=undefined" class="offer_btn text-white text-center text-xl block mt-3">Oferta Exclusiva <span class="text-yellow-500 block font-bold">Oferta Expira em 15
+					minutos</span></a> <div class="fixed bottom-0 left-0 w-full right-0 py-3 z-10"><div class="flex flex-wrap items-center justify-center mx-auto max-w-sm px-6"><a href="https://go.fornpay.com/eaq60?affh=wj2l72g8ch&amp;src=undefined" class="zooming offer_btn block cursor-pointer text-2xl transform scale-y-120 w-full shadow-lg border-2 px-6 py-4 mt-3 rounded-lg border-b-4 border-b-green-800 font-semibold text-center text-white bg-green-600 border-green-800 uppercase"><span class="block leading-none m-0">SIM, EU QUERO!</span></a></div></div></div></section> <div id="comments" class="px-3 mt-5 mx-auto max-w-3xl my-8"><div id="testimonials" class="fbComments-GNoEFS4739063-element"><p class="text-xs sm:text-sm leading-4 font-semibold mb-2 text-white"> Mostrando 6 comentários </p> <div class="mb-2"><div class="flex w-full space-x-1 items-center font-[Helvetica]"><img src="/img/comentarios/h2.jpeg" class="cursor-pointer rounded-full h-10 w-10"> <div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100"><div class="px-0.5 py-1"><p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+								Carlos Souza </p> <p class="text-sm leading-4 pt-0.5">Irmão, falo nada. Só agradecer achei os ingredientes na
+								loja de chás que tem aqui na cidade e to seguindo conforme no vídeo, já vi diferença</p></div></div></div> <div class="flex w-full justify-between"><div class="w-12 sm:w-16"></div> <div class="grow flex gap-1 text-xs pt-0.5"><p class="font-semibold cursor-pointer hover:underline text-[#90949c]"> Curtir </p> <p class="text-[#90949c]">·</p> <p class="font-semibold cursor-pointer hover:underline text-[#90949c]"> Responder </p> <p class="text-[#90949c]">·</p> <div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline"><p class="text-xs text-[#90949c]"> 1 </p> <p class="text-[#90949c]">min</p></div></div> <div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit"><img width="16" height="16" src="/img/l.webp" class="w-4 block"> <span class="text-xs text-[#90949c] pt-0.5"> 45 </span></div></div></div> <div class="mb-2"><div class="flex w-full space-x-1 items-center font-[Helvetica]"><img src="/img/comentarios/h3.jpeg" class="cursor-pointer rounded-full h-10 w-10"> <div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100"><div class="px-0.5 py-1"><p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+								Alexandre Carvalho </p> <p class="text-sm leading-4 pt-0.5">PQP foda essa parada, mas ainda bem que tem essas coisas
+								naturais que da pra dar uma boa melhorada :)</p></div></div></div> <div class="flex w-full justify-between"><div class="w-12 sm:w-16"></div> <div class="grow flex gap-1 text-xs pt-0.5"><p class="font-semibold cursor-pointer hover:underline text-[#90949c]"> Curtir </p> <p class="text-[#90949c]">·</p> <p class="font-semibold cursor-pointer hover:underline text-[#90949c]"> Responder </p> <p class="text-[#90949c]">·</p> <div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline"><p class="text-xs text-[#90949c]"> 1 </p> <p class="text-[#90949c]">min</p></div></div> <div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit"><img width="16" height="16" src="/img/l.webp" class="w-4 block"> <span class="text-xs text-[#90949c] pt-0.5"> 94 </span></div></div></div> <div class="mb-2"><div class="flex w-full space-x-1 items-center font-[Helvetica]"><img src="/img/comentarios/h1.jpeg" class="cursor-pointer rounded-full h-10 w-10"> <div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100"><div class="px-0.5 py-1"><p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+								Samuel da Cunha
+							</p> <p class="text-sm leading-4 pt-0.5">Alguém sabe dizer se é tranquilo fazer os exercicios?
+							</p></div></div></div> <div class="flex w-full justify-between"><div class="w-12 sm:w-16"></div> <div class="grow flex gap-1 text-xs pt-0.5"><p class="font-semibold cursor-pointer hover:underline text-[#90949c]"> Curtir </p> <p class="text-[#90949c]">·</p> <p class="font-semibold cursor-pointer hover:underline text-[#90949c]"> Responder </p> <p class="text-[#90949c]">·</p> <div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline"><p class="text-xs text-[#90949c]"> 1 </p> <p class="text-[#90949c]">min</p></div></div> <div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit"><img width="16" height="16" src="/img/l.webp" class="w-4 block"> <span class="text-xs text-[#90949c] pt-0.5"> 86 </span></div></div></div> <div class="mb-2"><div class="flex w-full space-x-1 items-center font-[Helvetica]"><img src="/img/comentarios/h4.jpeg" class="cursor-pointer rounded-full h-10 w-10"> <div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100"><div class="px-0.5 py-1"><p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+								Marcinho T. V
+							</p> <p class="text-sm leading-4 pt-0.5">Surreal isso meu padrin, consegui engrossar aqui e a
+								muié pirou kkkk Tive o resultado em uns 21 dias. Mas deu certo, isso que importa pra mim
+								😱</p></div></div></div> <div class="flex w-full justify-between"><div class="w-12 sm:w-16"></div> <div class="grow flex gap-1 text-xs pt-0.5"><p class="font-semibold cursor-pointer hover:underline text-[#90949c]"> Curtir </p> <p class="text-[#90949c]">·</p> <p class="font-semibold cursor-pointer hover:underline text-[#90949c]"> Responder </p> <p class="text-[#90949c]">·</p> <div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline"><p class="text-xs text-[#90949c]"> 1 </p> <p class="text-[#90949c]">min</p></div></div> <div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit"><img width="16" height="16" src="/img/l.webp" class="w-4 block"> <span class="text-xs text-[#90949c] pt-0.5"> 107 </span></div></div></div> <div class="mb-2"><div class="flex w-full space-x-1 items-center font-[Helvetica]"><img src="/img/comentarios/h5.jpeg" class="cursor-pointer rounded-full h-10 w-10"> <div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100"><div class="px-0.5 py-1"><p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+								Tiago Oliver
+							</p> <p class="text-sm leading-4 pt-0.5">Top, to assistindo aqui vai dar bom rapaziada</p></div></div></div> <div class="flex w-full justify-between"><div class="w-12 sm:w-16"></div> <div class="grow flex gap-1 text-xs pt-0.5"><p class="font-semibold cursor-pointer hover:underline text-[#90949c]"> Curtir </p> <p class="text-[#90949c]">·</p> <p class="font-semibold cursor-pointer hover:underline text-[#90949c]"> Responder </p> <p class="text-[#90949c]">·</p> <div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline"><p class="text-xs text-[#90949c]"> 1 </p> <p class="text-[#90949c]">min</p></div></div> <div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit"><img width="16" height="16" src="/img/l.webp" class="w-4 block"> <span class="text-xs text-[#90949c] pt-0.5"> 33 </span></div></div></div> <div class="mb-2"><div class="flex w-full space-x-1 items-center font-[Helvetica]"><img src="/img/comentarios/h6.jpeg" class="cursor-pointer rounded-full h-10 w-10"> <div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100"><div class="px-0.5 py-1"><p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+								Bruno
+								Freitas </p> <p class="text-sm leading-4 pt-0.5">Será que precisa tomar alguma coisa ou só o chá
+								afrodisiaco com os exercicios resolve?</p></div></div></div> <div class="flex w-full justify-between"><div class="w-12 sm:w-16"></div> <div class="grow flex gap-1 text-xs pt-0.5"><p class="font-semibold cursor-pointer hover:underline text-[#90949c]"> Curtir </p> <p class="text-[#90949c]">·</p> <p class="font-semibold cursor-pointer hover:underline text-[#90949c]"> Responder </p> <p class="text-[#90949c]">·</p> <div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline"><p class="text-xs text-[#90949c]"> 1 </p> <p class="text-[#90949c]">min</p></div></div> <div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit"><img width="16" height="16" src="/img/l.webp" class="w-4 block"> <span class="text-xs text-[#90949c] pt-0.5"> 33 </span></div></div></div> <div class="mb-2"><div class="flex w-full space-x-1 items-center font-[Helvetica]"><img src="/img/comentarios/h7.jpeg" class="cursor-pointer rounded-full h-10 w-10"> <div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100"><div class="px-0.5 py-1"><p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+								Manoel do
+								Socorro </p> <p class="text-sm leading-4 pt-0.5">Passando só pra avisar que comprei e recebi o acesso no
+								meu e-mail. Amanhã já começo. Bora pra cima, literalmente kkkk
+							</p></div></div></div> <div class="flex w-full justify-between"><div class="w-12 sm:w-16"></div> <div class="grow flex gap-1 text-xs pt-0.5"><p class="font-semibold cursor-pointer hover:underline text-[#90949c]"> Curtir </p> <p class="text-[#90949c]">·</p> <p class="font-semibold cursor-pointer hover:underline text-[#90949c]"> Responder </p> <p class="text-[#90949c]">·</p> <div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline"><p class="text-xs text-[#90949c]"> 1 </p> <p class="text-[#90949c]">min</p></div></div> <div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit"><img width="16" height="16" src="/img/l.webp" class="w-4 block"> <img width="16" height="16" src="/img/h.webp" class="w-4 -ml-1 mr-0.5"> <span class="text-xs text-[#90949c] pt-0.5"> 103 </span></div></div></div> <div class="mb-2"><div class="flex w-full space-x-1 items-center font-[Helvetica]"><img src="/img/comentarios/h8.jpeg" class="cursor-pointer rounded-full h-10 w-10"> <div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100"><div class="px-0.5 py-1"><p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+								Paulo Martins
+							</p> <p class="text-sm leading-4 pt-0.5">Consegui aqui também, acabei pegando um bom desconto....
+							</p></div></div></div> <div class="flex w-full justify-between"><div class="w-12 sm:w-16"></div> <div class="grow flex gap-1 text-xs pt-0.5"><p class="font-semibold cursor-pointer hover:underline text-[#90949c]"> Curtir </p> <p class="text-[#90949c]">·</p> <p class="font-semibold cursor-pointer hover:underline text-[#90949c]"> Responder </p> <p class="text-[#90949c]">·</p> <div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline"><p class="text-xs text-[#90949c]"> 1 </p> <p class="text-[#90949c]">min</p></div></div> <div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit"><img width="16" height="16" src="/img/l.webp" class="w-4 block"> <span class="text-xs text-[#90949c] pt-0.5"> 103 </span></div></div></div> <p class="text-xs sm:text-sm leading-4 font-semibold mt-4" style="color: rgb(85, 85, 85); text-align: center;"> Você
+				precisa
+				estar
+				logado para comentar. </p></div></div></div></div></div></div><script>window.__NUXT__={config:{_app:{basePath:"/",assetsPath:"/_nuxt/",cdnURL:null}}}</script>
+  <script src="/_nuxt/6c8cca5.js"></script><script src="/_nuxt/8a33234.js"></script><script src="/_nuxt/198c17c.js"></script><script src="/_nuxt/a385c29.js"></script>
+
+</body></html>
